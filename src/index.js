@@ -96,6 +96,6 @@ export const consoleLoggerWordsWhile =(string) => {
  */
 export const consoleLoggerWordsSplit = (string) => {
     string.split('').forEach((letter ) => {
-        console.log(string);
+        console.lo(string);
     })
 };
