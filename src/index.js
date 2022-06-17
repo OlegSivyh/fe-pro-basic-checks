@@ -5,6 +5,7 @@
  */
 export const capitalizeString = (string) => string.split(' ').map((word) => `${word[0].toUpperCase()}${word.slice(1)}`).join(' ');
 
+
 /**
  * Должна быть function declaration
  * @param {string} string
@@ -28,7 +29,7 @@ export const reducerIf = function (action , string) {
     } else if (action === 'lowercase'){
         string.toLowerCase();
     } else if (action === 'capitalize') {
-        return fenceString(string);
+        return capitalizeString(string);
     } else if (action === 'fence') {
         return fenceString(string);
     }else {
